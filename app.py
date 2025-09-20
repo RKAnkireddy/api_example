@@ -11,5 +11,9 @@ def add(x,y):
 def subtract(x,y):
     return float(x) - float(y)
 
+@app.get("/multiply")
+def subtract(x,y):
+    return float(x) * float(y)
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=9321)
